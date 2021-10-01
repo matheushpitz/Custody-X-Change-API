@@ -1,0 +1,29 @@
+{
+  "name": "custody-x-change-api",
+  "version": "1.0.0",
+  "description": "Custody X Change API",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && npx tsc",
+    "start": "npm run build && node ./build/index.js",
+    "serve": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheushpitz/Custody-X-Change-API.git"
+  },
+  "author": "Matheus Henrique Pitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheushpitz/Custody-X-Change-API/issues"
+  },
+  "homepage": "https://github.com/matheushpitz/Custody-X-Change-API#readme",
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "nodemon": "^2.0.13",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}
