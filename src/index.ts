@@ -1,1 +1,3 @@
-console.log('hello world');
+import app from './app';
+
+export default app;
