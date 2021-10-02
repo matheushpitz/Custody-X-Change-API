@@ -1,8 +1,6 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import routes from './routes';
-
-dotenv.config();
+import { config } from './app.config';
 
 const app = express();
 
@@ -12,6 +10,7 @@ app.listen(port, () => {
     console.log(`Listening at port ${port}`);
 });
 
+config(app);
 routes(app);
 
 export default app;
